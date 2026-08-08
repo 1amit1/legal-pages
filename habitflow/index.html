@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="HabitFlow iOS app Privacy Policy" />
+  <title>HabitFlow Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --text: #1a1a1a;
+      --muted: #555;
+      --border: #e5e5e5;
+      --bg: #fafafa;
+      --card: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f2f2f2;
+        --muted: #a8a8a8;
+        --border: #333;
+        --bg: #121212;
+        --card: #1c1c1c;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    header {
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.5rem;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin: 2rem 0 0.75rem;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin: 1.25rem 0 0.5rem;
+    }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 1.25rem; margin: 0.5rem 0 1rem; }
+    li { margin: 0.35rem 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0 1.25rem;
+      font-size: 0.95rem;
+      background: var(--card);
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { font-weight: 600; }
+    strong { font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>HabitFlow Privacy Policy</h1>
+      <p class="meta">Last updated: August 8, 2026</p>
+      <p class="meta">Same substance as Settings → About → Privacy Policy in the HabitFlow iOS app.</p>
+    </header>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy describes how HabitFlow (“HabitFlow,” “the App,” “we,” or “us”) handles information when you use the HabitFlow iOS application.</p>
+    <p>HabitFlow is designed as a privacy-first, <strong>local-first</strong> habit tracker. We do <strong>not</strong> require you to create an account, and we do <strong>not</strong> operate a HabitFlow server that stores your habit history. This Policy explains what stays on your device, what may leave your device when you choose optional features, and what rights you have.</p>
+    <p>By using HabitFlow, you agree to this Policy. If you do not agree, please do not use the App.</p>
+
+    <h2>2. Who we are &amp; contact</h2>
+    <p>HabitFlow is provided by the independent developer of the App (the “Developer”).</p>
+    <p><strong>Privacy questions or requests:</strong> contact the Developer using the support email or support URL listed on HabitFlow’s <strong>App Store product page</strong>. Set a working contact address in App Store Connect before public release.</p>
+
+    <h2>3. Summary</h2>
+    <ul>
+      <li>No HabitFlow user account is required.</li>
+      <li>Habit data, completion history, and most settings are stored on your device.</li>
+      <li>AI API keys you enter are stored in the iOS Keychain on your device.</li>
+      <li>If you use optional AI habit creation, text you choose to send is transmitted to the AI provider(s) you configure (not to a HabitFlow backend for storage).</li>
+      <li>If you use voice input, Apple’s speech and microphone capabilities process audio according to Apple’s systems and your device permissions.</li>
+      <li>If you enable calendar-related reminders, HabitFlow may create or update calendar events via Apple’s EventKit, with your permission.</li>
+      <li>We do <strong>not</strong> sell your personal information.</li>
+      <li>We do <strong>not</strong> include third-party advertising SDKs that profile you for ads.</li>
+      <li>Optional anonymous product analytics (TelemetryDeck) may run when enabled in Settings → Privacy (on by default; you can turn off anytime). Event <em>names</em> only—not habit titles, notes, or AI prompts.</li>
+    </ul>
+
+    <h2>4. Information we process</h2>
+
+    <h3>4.1 Information you provide</h3>
+    <ul>
+      <li>Display name or personalization text</li>
+      <li>Habit titles, descriptions, goals, schedules, colors/icons, categories/focus areas, reminder times, related configuration</li>
+      <li>Habit completion and progress logs</li>
+      <li>Preferences (theme, week start, icon style, sorting, etc.)</li>
+      <li>Optional AI configuration: provider, model id, API keys</li>
+      <li>Optional free-form text for AI-assisted habit creation (typed or transcribed)</li>
+    </ul>
+
+    <h3>4.2 Device &amp; permission-gated data</h3>
+    <ul>
+      <li>Microphone audio only during active voice input (after permission)</li>
+      <li>Speech recognition transcripts for optional AI helpers</li>
+      <li>Calendar access when you enable calendar reminder features (after permission)</li>
+      <li>System-level technical data controlled by iOS/Apple</li>
+    </ul>
+
+    <h3>4.3 Anonymous product analytics (optional; TelemetryDeck)</h3>
+    <p>When <strong>Share Anonymous Usage Data</strong> is on (Settings → Privacy), HabitFlow sends privacy-oriented signals to <strong>TelemetryDeck</strong>. Signals use hashed identifiers and event type labels (e.g. habit completed, Insights opened, AI generate tapped) plus limited technical metadata from the SDK (e.g. app version, platform). HabitFlow does <strong>not</strong> send habit names, free-text notes, display names, API keys, or AI prompts. Disable anytime in Settings.</p>
+
+    <h3>4.4 What we do not collect for HabitFlow accounts</h3>
+    <ul>
+      <li>No HabitFlow email/password or social login accounts in the current version</li>
+      <li>No intentional collection of precise location, contacts library, photo library, HealthKit, or payment cards inside HabitFlow</li>
+      <li>No sale of habit lists to third parties</li>
+    </ul>
+
+    <h2>5. Where data is stored</h2>
+    <p><strong>On device:</strong> habits, logs, onboarding state, preferences (app storage / UserDefaults patterns); API keys in Keychain.</p>
+    <p><strong>Not on HabitFlow servers:</strong> no HabitFlow multi-user cloud database of habits/API keys in the current version.</p>
+    <p><strong>Anonymous analytics (if enabled):</strong> aggregate event signals may be processed by TelemetryDeck under their privacy practices—not a habit-content warehouse operated by HabitFlow.</p>
+    <p><strong>Apple backups:</strong> if you enable whole-device iCloud Backup or similar system features, local app data may be included under <strong>Apple’s</strong> terms and your device settings—not a separate HabitFlow “account cloud” product in v1.</p>
+
+    <h2>6. How we use information</h2>
+    <p>We use information only to:</p>
+    <ul>
+      <li>Provide habit tracking, insights, and settings on your device</li>
+      <li>Sync optional reminders/events with Calendar when you enable that</li>
+      <li>Process AI habit suggestions when you voluntarily use AI and supply a provider API key</li>
+      <li>Support local app reliability</li>
+      <li>Understand product usage in aggregate when analytics is enabled (without reading individual habit content)</li>
+    </ul>
+    <p>We do not use your habit history to train HabitFlow’s own AI models. Third-party AI providers process data under <strong>their</strong> policies when you use them.</p>
+
+    <h2>7. Network transmissions &amp; third parties</h2>
+
+    <h3>7.1 AI providers (optional, user-configured)</h3>
+    <p>When you use AI features with a configured API key, HabitFlow sends the content needed for the request (typically prompt/description and related metadata) to the selected provider’s API over HTTPS. Providers may include OpenAI, Anthropic, Google, and others shown in Settings.</p>
+    <ul>
+      <li>Keys authenticate those requests</li>
+      <li>Billing is between you and that provider</li>
+      <li>Retention on their side follows their policy; HabitFlow does not keep a HabitFlow-operated prompt archive</li>
+    </ul>
+
+    <h3>7.2 TelemetryDeck (optional product analytics)</h3>
+    <p>When Share Anonymous Usage Data is enabled, the TelemetryDeck SDK transmits event signals and limited technical metadata over HTTPS. HabitFlow does not include habit titles or free-text content. Governed by TelemetryDeck’s privacy policy. Opt out: Settings → Privacy.</p>
+
+    <h3>7.3 Apple</h3>
+    <p>App Store, OS services, and permission frameworks are governed by Apple’s Privacy Policy and your Apple ID / device settings.</p>
+
+    <h3>7.4 Advertising</h3>
+    <p>The current version does <strong>not</strong> include third-party ad networks or ad tracking SDKs.</p>
+
+    <h2>8. Permissions</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Microphone</td>
+          <td>Optional voice input for habit creation</td>
+        </tr>
+        <tr>
+          <td>Speech Recognition</td>
+          <td>Optional speech-to-text for AI helpers</td>
+        </tr>
+        <tr>
+          <td>Calendar (full access when requested)</td>
+          <td>Optional create/update/remove habit-related events</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Revoke anytime in iOS Settings → HabitFlow. Core local tracking works without network. Analytics (when enabled) uses network for event signals only.</p>
+
+    <h2>9. Legal bases (where applicable)</h2>
+    <p>Where GDPR/UK GDPR apply: contract/performance of the App; consent for optional permissions, AI you start, and optional product analytics (opt-out in Settings); limited legitimate interests for on-device integrity and product improvement where applicable. Withdraw permission consent in iOS Settings; turn off analytics in HabitFlow Settings → Privacy.</p>
+
+    <h2>10. Sharing &amp; selling</h2>
+    <p>We do <strong>not</strong> sell personal information. Sharing only: (1) AI providers you select when using AI; (2) TelemetryDeck when analytics is enabled (aggregate events, not habit free text); (3) Apple system services you allow; (4) legal/safety requirements. No ad-partner sharing of habits.</p>
+
+    <h2>11. Retention &amp; deletion</h2>
+    <p>Data stays on device until you clear it or uninstall. Use in-app clear/delete/clear API key, remove habits, turn off analytics, or uninstall. Calendar events may need deletion in Calendar or when HabitFlow cleans linked events. Data already sent to AI providers or TelemetryDeck follows their retention rules.</p>
+
+    <h2>12. Security</h2>
+    <p>Keychain and platform storage help protect on-device secrets. No method is 100% secure. Protect your device and API keys.</p>
+
+    <h2>13. Children</h2>
+    <p>Not directed at children under 13 (or higher age if required where you live). We do not knowingly collect data from children under that age. Contact App Store support contact if you need help removing local data.</p>
+
+    <h2>14. International users</h2>
+    <p>Data primarily on your device. AI provider and analytics processing may occur in countries where those providers operate, subject to their transfer practices.</p>
+
+    <h2>15. Your rights</h2>
+    <p>Depending on jurisdiction (e.g. GDPR, CCPA): access, deletion, correction, portability, objection/restriction. Local-first design means you primarily exercise access/deletion <strong>in the App</strong> or by uninstalling; opt out of analytics in Settings → Privacy. For California: we do not sell/share for cross-context behavioral advertising in the current version. Supervisory authority complaints available where law allows. Contact via App Store support channel.</p>
+
+    <h2>16. Changes to App Store privacy information</h2>
+    <p>Apple’s App Store may show “App Privacy” labels describing data practice for the App. The Developer keeps those labels accurate as HabitFlow evolves—including disclosing product analytics (TelemetryDeck) when used. The substance of data handling is described in this Policy.</p>
+
+    <h2>17. Changes</h2>
+    <p>We may update this Policy for product changes (for example iCloud sync or accounts). Material updates will change “Last updated,” in-app text, and any public URL. Continued use after updates constitutes acceptance where law allows.</p>
+
+    <h2>18. Governing note</h2>
+    <p>This Policy is for transparency and platform compliance and does not create rights beyond applicable law. “Optional” or future features apply only if present in your installed version.</p>
+  </main>
+</body>
+</html>
