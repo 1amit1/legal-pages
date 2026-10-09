@@ -85,7 +85,7 @@
   <main>
     <header>
       <h1>HabitGorilla Privacy Policy</h1>
-      <p class="meta">Last updated: August 8, 2026</p>
+      <p class="meta">Last updated: October 9, 2026</p>
       <p class="meta">Same substance as Settings → About → Privacy Policy in the HabitGorilla iOS app.</p>
     </header>
 
@@ -103,7 +103,7 @@
       <li>No HabitGorilla user account is required.</li>
       <li>Habit data, completion history, and most settings are stored on your device.</li>
       <li>AI API keys you enter are stored in the iOS Keychain on your device.</li>
-      <li>If you use optional AI habit creation, text you choose to send is transmitted to the AI provider(s) you configure (not to a HabitGorilla backend for storage).</li>
+      <li>If you use optional AI habit creation, your description may be processed <strong>entirely on your device</strong> (Apple Intelligence, on supported devices), sent to <strong>HabitGorilla's own hosted service</strong> (which forwards it to OpenAI to generate a result and does not store it, but verifies your device with Apple's App Attest to prevent abuse), or sent <strong>directly to a provider you configure</strong> with your own API key — never to a HabitGorilla content database.</li>
       <li>If you use voice input, Apple’s speech and microphone capabilities process audio according to Apple’s systems and your device permissions.</li>
       <li>If you turn on Send Reminder for a habit, HabitGorilla may schedule local iOS notifications on this device (lock screen / Notification Center), with your permission.</li>
       <li>If you turn on Add to Calendar for a habit, HabitGorilla may create or update calendar events via Apple’s EventKit, with your permission.</li>
@@ -163,12 +163,15 @@
 
     <h2>7. Network transmissions &amp; third parties</h2>
 
-    <h3>7.1 AI providers (optional, user-configured)</h3>
-    <p>When you use AI features with a configured API key, HabitGorilla sends the content needed for the request (typically prompt/description and related metadata) to the selected provider’s API over HTTPS. Providers may include OpenAI, Anthropic, Google, and others shown in Settings.</p>
+    <h3>7.1 AI habit creation (optional) — one of three paths per request</h3>
+    <p>HabitGorilla can turn a description into habits in one of three ways. Only one path is used for any given request, chosen automatically (on-device first, where available) or by your own AI settings.</p>
+    <p><strong>On-device, when available.</strong> On supported devices (Apple Intelligence–capable hardware and OS version), your description is processed entirely on your device using Apple's on-device Foundation Models. Nothing is sent over the network for this path, and HabitGorilla never sees the text.</p>
+    <p><strong>HabitGorilla's hosted AI (no setup required).</strong> When on-device processing isn't available and you haven't configured your own key, your description is sent over HTTPS to HabitGorilla's own server (a Cloudflare Worker), which forwards it to OpenAI to generate a result and does not otherwise store the text. To prevent automated abuse of this free capacity, the server verifies your device using Apple's App Attest and retains a device attestation key and a generation count tied to that device — not your name, Apple ID, or any habit content. This path is subject to the free/Pro generation limits described in the App.</p>
+    <p><strong>Your own provider key (optional, unlimited).</strong> If you add your own API key in Settings, your description is sent directly to the provider you configure — OpenAI, Anthropic, Google, and others shown in Settings — using that key.</p>
     <ul>
-      <li>Keys authenticate those requests</li>
-      <li>Billing is between you and that provider</li>
-      <li>Retention on their side follows their policy; HabitGorilla does not keep a HabitGorilla-operated prompt archive</li>
+      <li>API keys authenticate requests on the direct-provider path; App Attest authenticates the device on HabitGorilla's hosted path</li>
+      <li>Billing for the direct-provider path is between you and that provider; HabitGorilla's hosted path has no cost to you</li>
+      <li>Retention on a provider's side follows their policy; HabitGorilla does not keep a HabitGorilla-operated prompt archive on any path</li>
     </ul>
 
     <h3>7.2 TelemetryDeck (optional product analytics)</h3>
