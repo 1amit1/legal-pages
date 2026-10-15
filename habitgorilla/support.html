@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="HabitGorilla iOS app support" />
+  <title>HabitGorilla Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --text: #1a1a1a;
+      --muted: #555;
+      --border: #e5e5e5;
+      --bg: #fafafa;
+      --card: #fff;
+      --accent: #b5651d;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f2f2f2;
+        --muted: #a8a8a8;
+        --border: #333;
+        --bg: #121212;
+        --card: #1c1c1c;
+        --accent: #e0a872;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    header {
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.5rem;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin: 2rem 0 0.75rem;
+      letter-spacing: -0.01em;
+    }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 1.25rem; margin: 0.5rem 0 1rem; }
+    li { margin: 0.35rem 0; }
+    strong { font-weight: 600; }
+    a { color: var(--accent); }
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.25rem 1.5rem;
+      margin: 0.75rem 0 1.25rem;
+    }
+    .contact-card p { margin: 0.35rem 0; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>HabitGorilla Support</h1>
+      <p class="meta">Last updated: October 15, 2026</p>
+    </header>
+
+    <h2>Need help?</h2>
+    <div class="contact-card">
+      <p>Email <strong><a href="mailto:amitos+habitgorilla@gmail.com">amitos+habitgorilla@gmail.com</a></strong> and we'll get back to you.</p>
+      <p>Include your iOS version and, if it's about a specific habit or AI result, a short description of what happened.</p>
+    </div>
+
+    <h2>Common questions</h2>
+
+    <p><strong>How do I restore a Pro purchase?</strong><br>
+    Open HabitGorilla → Settings → Restore Purchase. This re-links your existing subscription to the app without charging you again.</p>
+
+    <p><strong>How do I manage or cancel my subscription?</strong><br>
+    On your iPhone: Settings app → your name → Subscriptions → HabitGorilla Pro. Apple handles billing directly; we don't have access to cancel or refund it from our side, but Apple's own refund request process is available through the same Subscriptions screen.</p>
+
+    <p><strong>Is my habit data private?</strong><br>
+    Yes — HabitGorilla is local-first. Your habits and history stay on your device; there's no account and no HabitGorilla server storing them. See the full <a href="index.html">Privacy Policy</a> for exactly what does and doesn't leave your device (for example, when you use AI habit creation).</p>
+
+    <p><strong>How do I delete my data?</strong><br>
+    Delete individual habits in-app, or uninstall HabitGorilla to remove everything at once — there's no separate account to close.</p>
+
+    <p><strong>Something's not working — what should I include?</strong><br>
+    Your iOS version, iPhone model if you know it, and whether it happens every time or occasionally. A screenshot helps a lot if it's a visual issue.</p>
+
+    <footer>
+      <p>HabitGorilla for iOS · <a href="index.html">Privacy Policy</a></p>
+    </footer>
+  </main>
+</body>
+</html>
